@@ -1,0 +1,37 @@
+pipeline {
+  agent any
+    
+    stages {
+        
+    stage('Git') {
+      steps {
+        git branch: 'main', url: 'https://github.com/vikramcss/jenkins_cicd.git'
+      }
+    }
+     
+    stage('Build Image') {
+      steps {
+        nodejs(cacheLocationStrategy: workspace(), nodeJSInstallationName: 'NodeJS') {
+        sh 'npm cache clean --force'
+        
+}  
+         
+        sh 'docker build -t smbarge/excise:pcb01_client ./client'
+         
+      }
+    }
+
+    stage('Push Docker Image To Docker Hub')
+    {
+        steps {
+            withCredentials([usernamePassword(credentialsId: 'dockerhub-credentials', passwordVariable: 'DOCKERHUB_PASSWORD', usernameVariable: 'DOCKERHUB_USERNAME')])
+           {
+               sh "docker login -u $DOCKERHUB_USERNAME -p $DOCKERHUB_PASSWORD"
+           }
+        sh 'docker push smbarge/excise:pcb01_client'
+        
+    }  
+    
+    }
+}
+}
