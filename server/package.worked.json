@@ -1,0 +1,40 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "tap \"test/**/*.test.js\"",
+    "start": "fastify start -l info app.js",
+    "dev": "fastify start -w -l info -P app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1058.0",
+    "fastify": "^3.0.0",
+    "fastify-autoload": "^3.3.1",
+    "fastify-cli": "^2.13.0",
+    "fastify-cors": "^6.0.2",
+    "fastify-jwt": "^4.1.0",
+    "fastify-mailer": "^2.2.0",
+    "fastify-mongodb": "^4.1.1",
+    "fastify-multer": "^2.0.2",
+    "fastify-plugin": "^3.0.0",
+    "fastify-sensible": "^3.1.0",
+    "fastify-static": "^4.5.0",
+    "fastify-swagger": "^4.12.6",
+    "install": "^0.13.0",
+    "luxon": "^2.1.1",
+    "multer-s3": "^2.10.0",
+    "svg-captcha": "^1.4.0",
+    "uniqid": "^5.4.0"
+  },
+  "devDependencies": {
+    "tap": "^15.0.9"
+  }
+}

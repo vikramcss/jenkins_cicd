@@ -1,0 +1,7 @@
+FROM smbarge/excise:pcb01_client
+WORKDIR /app
+ENV PORT 3000
+ENV VITE_APISERVER=https://pcb01.parikshaworld.com
+EXPOSE $PORT
+CMD ["node","build/index.js"]
+

@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+    pcb01_server:
+        build:
+          context: ./server
+          dockerfile: Dockerfile.image
+        container_name: pcb_server_01
+        hostname: pcb_server_01
+        ports:
+          - "5000:5000"
+    pcb_client:
+        environment:
+          - VITE_APISERVER=https://pcb01.parikshaworld.com
+        build:
+          context: ./client
+          dockerfile: Dockerfile.image
+        container_name: pcb_client_01
+        hostname: pcb_client_01
+        ports:
+          - "3000:3000"
+

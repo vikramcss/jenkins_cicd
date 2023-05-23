@@ -1,0 +1,1 @@
+<div class="flex justify-end bg-red-400 ">{appid}</div>

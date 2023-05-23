@@ -1,0 +1,39 @@
+
+POST https://localhost:5000/upload/certificate HTTP/1.1
+Content-Type: application/xml
+{
+    "filename":"widowsCertificatefile"
+}
+
+###
+POST http://localhost:5000/razorpay/getPaymentId HTTP/1.1
+Content-Type: application/json
+
+{
+    "amount": "100"
+}
+
+###
+POST http://localhost:5000/api/application/saveStartEndDatetime HTTP/1.1
+Content-Type: application/json
+
+{
+    "amount": "100"
+}
+
+###
+POST http://localhost:5000/api/auth/loginAdmin HTTP/1.1
+Content-Type: application/json
+
+{
+    "login":"admin",
+    "password":"Admin@2019",
+    
+}
+
+
+
+###
+GET http://localhost:5000/api/admin/adminSummary HTTP/1.1
+Content-Type: application/json
+

@@ -1,0 +1,9 @@
+
+pay_JpYYshRcQS0Pxu, 500.00,INR,captured, order_JpYYP1WvzwJ3yD ,"",0,upi,0,0,"",1,"Processing Fee, C-MET SA-III","","","","",gautham391@oksbi,gautham391@gmail.com,+919597132306,"{""address"":""Pune Univeristy campus, Maharashtra""}",0,0,"","", 05/07/2022 10:11:46,"",""
+"confirmation_client": {
+        "razorpay_order_id": "order_JpYYP1WvzwJ3yD",
+        "razorpay_payment_id": "pay_JpYYshRcQS0Pxu",
+        "razorpay_signature": "manually added payment",
+        "amount": 50000,
+        "updated_at": "2022-07-05T10:11:46.000+05:30"
+    },

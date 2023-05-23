@@ -1,0 +1,131 @@
+POST https://example.com/comments HTTP/1.1
+content-type: application/json
+
+{
+    "name": "sample",
+    "time": "Wed, 21 Oct 2015 18:27:50 GMT"
+}
+ 
+###
+POST https://b6b3-103-254-53-82.in.ngrok.io/api/razorpay/paymentVerification HTTP/1.1
+content-type: application/json
+
+{
+    "name": "sample",
+    "time": "Wed, 21 Oct 2015 18:27:50 GMT"
+}
+
+###
+GET http://localhost:5000/application/printApplication HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiTUkyMTAxMDEyMyIsImlhdCI6MTYzODIwODAwNn0.w92smdlKgNmj7BtiBFDlFORRag6zlpoM8BQ5wN9ePdA
+
+###
+POST http://localhost:5000/application/printApplication HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiTUkyMTAxMDEyMyIsImlhdCI6MTYzODIwODAwNn0.w92smdlKgNmj7BtiBFDlFORRag6zlpoM8BQ5wN9ePdA
+
+{
+  "personalInfo" : {
+    "name": "Sangram ",
+    "fathersName": "Barge",
+    "dob": "2002-12-09T18:30:00.000Z",
+    "nationality": "Indian",
+    "religion": "Hindu",
+    "category": "ST",
+    "email": "smbarge@gmail.com",
+    "mobile": "",
+    "gender": "Male"
+  },
+  "correspondenceAddress" : {
+    "addressLine1": "baner",
+    "addressLine2": "baner",
+    "state": "Madhya Pradesh",
+    "district": "dkd",
+    "pin": "99999"
+  },
+  "permanentAddress" : {
+    "addressLine1": "baner",
+    "addressLine2": "baner",
+    "state": "Madhya Pradesh",
+    "district": "dkd",
+    "pin": "99999"
+  }
+}
+
+###
+POST http://localhost:5000/application/saveApplication HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiTUkyMTAxMDEyMyIsImlhdCI6MTYzODIwODAwNn0.w92smdlKgNmj7BtiBFDlFORRag6zlpoM8BQ5wN9ePdA
+
+{
+  "personalInfo" : {
+    "name": "Sangram Madhukar Barge",
+    "fathersName": "Barge",
+    "dob": "2002-12-09T18:30:00.000Z",
+    "nationality": "Indian",
+    "religion": "Hindu",
+    "category": "ST",
+    "email": "smbarge@gmail.com",
+    "mobile": "",
+    "gender": "Male"
+  }
+}
+
+###
+GET http://localhost:5000/getFormSchedule HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiTUkyMTAxMDEyMyIsImlhdCI6MTYzODIwODAwNn0.w92smdlKgNmj7BtiBFDlFORRag6zlpoM8BQ5wN9ePdA
+
+###
+POST  http://localhost:5000/api/auth/sendMobileVerificationCode HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiTUkyMTAxMDEyMyIsImlhdCI6MTYzODIwODAwNn0.w92smdlKgNmj7BtiBFDlFORRag6zlpoM8BQ5wN9ePdA
+
+{
+ "mobile":9049269787 
+}
+
+###
+POST  http://localhost:5000/api/auth/validateMobileOTP HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoiTUkyMTAxMDEyMyIsImlhdCI6MTYzODIwODAwNn0.w92smdlKgNmj7BtiBFDlFORRag6zlpoM8BQ5wN9ePdA
+
+{
+ "mobile":9049269787,
+ "mobileVerificationId":"79ad19e3-c6bc-4f89-af17-aa7f946d0312",
+ "otp":"076815" 
+}
+
+
+###
+POST  http://localhost:5000/api/auth/loginReview HTTP/1.1
+content-type: application/json
+
+{
+  "login":"admin",
+  "password":"Admin@2019",
+  "captch":"abcrd"
+}
+
+###
+POST  http://localhost:5000/api/auth/loginCenterUser HTTP/1.1
+content-type: application/json
+
+{
+  "login":"8805027292",
+  "password":"Admin@2019"
+}
+
+# https://4273-103-254-53-82.in.ngrok.io
+###
+POST  https://4273-103-254-53-82.in.ngrok.io/api/auth/loginCenterUser HTTP/1.1
+content-type: application/json
+
+{
+  "login":"8805027292",
+  "password":"Admin@2019"
+}
+
+###
+GET  https://4273-103-254-53-82.in.ngrok.io/api/centerManagement/getPhotoSign/:110001 HTTP/1.1
+content-type: application/json

@@ -1,0 +1,496 @@
+<script>
+  import Fa from "svelte-fa";
+  import { faEdit } from "@fortawesome/free-solid-svg-icons";
+  import TextInput from "../../common/TextInput.svelte";
+  import { createEventDispatcher } from "svelte";
+  import DropDown from "../../common/TwoDDropdown.svelte";
+import { onMount } from "svelte";
+
+onMount(()=>{
+  inputSubject.selected=essentialQualification.subject;
+})
+  
+  const dispatch = createEventDispatcher();
+  export let essentialQualification = {};
+  export let showModal;
+  export let index;
+  const qualificationOptions = {
+    Qualifications: ["Graduation", "English Typing 40"],
+  };
+
+  const qualificationChanged = (qualification) => {
+    switch (qualification) {
+      case "Graguation":
+        inputSubject.subjectOptions = subjectOptionsBsc;
+        inputSubject.selected = "";
+        break;
+      case "English Typing 40":
+        inputSubject.subjectOptions = subjectOptionsMsc;
+        inputSubject.selected = "";
+
+      //   break;
+      // case "Diploma":
+      //   inputSubject.subjectOptions = subjectOptionsDiploma;
+      //   inputSubject.selected = "";
+
+      //   break;
+      // case "Engginering":
+      //   inputSubject.subjectOptions = subjectOptionsEngineering;
+      //   inputSubject.selected = "";
+
+        break;
+    }
+  };
+  $: qualificationChanged(inputQualification.selected);
+  
+  const subjectOptions = {
+    subjects: [
+      "BA",
+      "B.COM",
+      "BSC",
+      "BE",
+      "Other",
+    ],
+  };
+  const subjectOptionsBsc = {
+    subjects: ["BA", "BE", "B.COM","BSC","Other"]
+  };
+  const subjectOptionsMsc = {
+    subjects: ["Government", "Other"]
+  };
+  console.log("essentialQualification is: ", essentialQualification);
+
+  let inputQualification = {
+    qualificationOptions,
+    selected: essentialQualification.qualification,
+    error: null,
+    validator: {
+      method: () => {
+        inputQualification.error =
+          inputQualification.selected.length === 0
+            ? inputQualification.validator.errormessage
+            : null;
+        return inputQualification.error ? false : true;
+      },
+      errormessage: "Qualification is required",
+    },
+  };
+
+  const graduationStreamOptions = {
+    Qualifications: ["B.A.", "B.Sc", "B.Com", "B.Ed", "B.E", "Other"],
+  };
+  let inputGraduationStream = {
+    graduationStreamOptions,
+    selected: essentialQualification.subject,
+    error: null,
+    validator: {
+      method: () => {
+        console.log("subject length is: ", inputGraduationStream.selected);
+        inputGraduationStream.error =
+          inputGraduationStream.selected.length === 0
+            ? inputGraduationStream.validator.errormessage
+            : null;
+        return inputGraduationStream.error ? false : true;
+      },
+      errormessage: "Subject is required",
+    },
+  };
+
+  let inputOther = {
+    label: "Name Of degree",
+    value: "",
+    validate: true,
+    readonly: false,
+    error: null,
+    placeholderValue: "Name Of degree",
+    error_mt: false,
+    paddingsize: 0,
+    validator: {
+      method: (value) => {
+        inputUniversity.error = null;
+        if (value.length <= 3) {
+          inputUniversity.error =
+            "University/institute can not be empty";
+          return false;
+        }
+        return true;
+      },
+      errormessage: "University/institute can not be empty",
+    },
+  };
+
+  let inputUniversity = {
+    label: "University/Research Institute",
+    value: essentialQualification.university,
+    validate: true,
+    readonly: false,
+    error: null,
+    placeholderValue: "University/Research Institute",
+    validator: {
+      method: (value) => {
+        inputUniversity.error = null;
+        if (value.length <= 3) {
+          inputUniversity.error = "University/institute can not be empty";
+          return false;
+        }
+        return true;
+      },
+      errormessage: "University/institute can not be empty",
+    },
+  };
+
+  let inputYearOfPassing = {
+    label: "Year of Passing",
+    value: essentialQualification.yearOfPassing,
+    validate: true,
+    readonly: false,
+    error: null,
+    placeholderValue: "Year of Passing",
+    validator: {
+      method: (value) => {
+        inputYearOfPassing.error = null;
+        let val = Number(value);
+        if (isNaN(val)) {
+          inputYearOfPassing.error = inputYearOfPassing.validator.errormessage;
+          return false;
+        }
+        if (val > 2023 || val < 1980) {
+          inputYearOfPassing.error =
+            "Year of passing should be between 1980 and 2023";
+          return false;
+        }
+        return true;
+      },
+      errormessage: "Year of passing should be between 1980 and 2023",
+    },
+  };
+
+  console.log("##1");
+  let inputMarksType = {
+    label: "Marks Type",
+    value: "Percentage",
+    options: ["Percentage", "CGPA"],
+    error: null,
+    validator: {
+      method: (value) => {
+        return inputMarksType.find((o) => o == value);
+      },
+      errormessage: "Enter marks must",
+    },
+  };
+
+
+  let inputMarksValue = null;
+  let inputPercentageValue = null;
+  let inputCGPAValue = null;
+  if (essentialQualification.marksType == "Percentage") {
+    inputMarksValue = essentialQualification.evaluation.percentage.marks;
+    inputPercentageValue =
+      essentialQualification.evaluation.percentage.percentage;
+  } else if (essentialQualification.marksType == "CGPA") {
+    inputCGPAValue = essentialQualification.evaluation.cgpa.gpa;
+  }
+
+  let inputMarks = {
+    label: "Marks",
+    value: inputMarksValue,
+    validate: true,
+    readonly: false,
+    error: null,
+    placeholderValue: "Marks",
+    validator: {
+      method: (value) => {
+        inputMarks.error = null;
+        let val = Number(value);
+        if (isNaN(val) || value === null || value === "") {
+          inputMarks.error = inputMarks.validator.errormessage;
+          return false;
+        }
+        return true;
+      },
+      errormessage: "marks should be number",
+    },
+  };
+  console.log("##2");
+
+  let inputPercentage = {
+    label: "Percentage",
+    value: inputPercentageValue,
+    validate: true,
+    readonly: false,
+    error: null,
+    placeholderValue: "Percentage",
+    validator: {
+      method: (value) => {
+        inputPercentage.error = null;
+        let val = Number(value);
+        if (isNaN(val) || value === null || value === "") {
+          inputPercentage.error = inputPercentage.validator.errormessage;
+          return false;
+        }
+        if (val > 100 || val < 0) {
+          inputPercentage.error = "percentage should be between 0 and 100";
+          return false;
+        }
+        return true;
+      },
+      errormessage: "percentage should be between 0 and 100",
+    },
+  };
+  
+  let inputCGPA = {
+    label: "CGPA",
+    value: inputCGPAValue,
+    validate: true,
+    readonly: false,
+    error: null,
+    placeholderValue: "CGPA",
+    validator: {
+      method: (value) => {
+        inputCGPA.error = null;
+        let val = Number(value);
+        if (isNaN(val) || value === null || value === "") {
+          inputCGPA.error = inputCGPA.validator.errormessage;
+          return false;
+        }
+        if (val > 100 || val < 0) {
+          inputCGPA.error = "CGPA should be a number";
+          return false;
+        }
+        return true;
+      },
+      errormessage: "CGPA should be a number",
+    },
+  };
+
+  console.log("##4");
+
+  let inputDateOfAward = {
+    label: "Date Of Award",
+    value: essentialQualification.dateOfAward,
+    validate: false,
+    readonly: false,
+    error: null,
+    placeholderValue: "Date Of Award",
+  };
+
+  //   const validatePhD = () => {
+  //   if (!inputDateOfAward.validator.method(inputDateOfAward.value)) {
+  //     return false;
+  //   }
+  //   return true;
+  // };
+  // const validateMTechME = () => {
+  //   let valid = true;
+  //   if (inputMarksType.value === "Percentage") {
+  //     if (!inputMarks.validator.method(inputMarks.value)) {
+  //       valid = false;
+  //     }
+  //     if (!inputPercentage.validator.method(inputPercentage.value)) {
+  //       valid = false;
+  //     }
+  //     if (!valid) return false;
+  //   } else {
+  //     if (!inputCGPA.validator.method(inputCGPA.value)) {
+  //       valid = false;
+  //     }
+  //   }
+  //   return true;
+  // };
+
+  const validate = () => {
+    let valid = true;
+    if (!inputQualification.validator.method()) {
+      valid = false;
+    }
+    if (!inputSubject.validator.method()) {
+      valid = false;
+    }
+    if (!inputUniversity.validator.method(inputUniversity.value)) {
+      valid = false;
+    }
+    if (!inputYearOfPassing.validator.method(inputYearOfPassing.value)) {
+      valid = false;
+    }
+
+    return valid;
+  };
+
+  let alertMessage = null;
+  const save = () => {
+    alertMessage = null;
+    if (!validate()) {
+      if (inputQualification.selected == "") {
+        alertMessage = "please select qualificaiton";
+      }
+      if (inputSubject.selected == "") {
+        let message = "please select subject";
+        alertMessage = alertMessage ? `${alertMessage}, ${message}` : message;
+      }
+      return false;
+    }
+    return true;
+  };
+
+  function toggleModal({ op }) {
+    if (op === "save" && !save()) {
+      return false;
+    }
+    console.log("toggleModal called :", op);
+    showModal = !showModal;
+    console.log("toggleModal called showModel:", showModal);
+    if (op === "cancel") return true;
+
+    let essentialQualification = {
+      qualification: inputQualification.selected,
+      subject: inputSubject.selected,
+      university: inputUniversity.value,
+      yearOfPassing: inputYearOfPassing.value,
+      marksType: inputMarksType.value,
+      evaluation: {},
+    };
+    if (inputMarksType.value === "Percentage") {
+      essentialQualification.evaluation = {
+        percentage: {
+          marks: inputMarks.value,
+          percentage: inputPercentage.value,
+        },
+      };
+    } else {
+      essentialQualification.evaluation = {
+        cgpa: { gpa: inputCGPA.value },
+      };
+    }
+    
+    dispatch("edit", { essentialQualification });
+    return true;
+  }
+ 
+</script>
+
+{#if showModal}
+  <div
+    class="overflow-x-hidden  overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center flex"
+  >
+    <div class="relative w-auto my-6 mx-auto flex justify-center">
+      <!--content-->
+      <div
+        class="border-0 rounded-lg shadow-lg relative flex flex-col w-8/12 md:w-full md:ml-0 mt-28 md:mt-1 bg-white outline-none focus:outline-none"
+      >
+        <!--header-->
+        <div
+          class="flex items-strat justify-between p-5 border-b border-solid border-orange-200 rounded-t"
+        >
+          <h3 class="text-3xl font-semibold">Edit Essential Qualification</h3>
+          <div class=" text-gray-600">
+            <Fa icon={faEdit} size="3x" />
+          </div>
+        </div>
+        <!--body-->
+        <div class="relative p-6 flex-auto">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3 ">
+            <DropDown
+              lable="Qualification"
+              dropdownOptions={inputQualification.qualificationOptions}
+              bind:selected={inputQualification.selected}
+            />
+            <DropDown
+              lable="Graduation Degree"
+              dropdownOptions={inputSubject.subjectOptions}
+              bind:selected={inputSubject.selected}
+            />
+
+            <TextInput
+              bind:label={inputOther.label}
+              bind:value={inputOther.value}
+              validate={inputOther.validate}
+              readonly={inputOther.readonly}
+              bind:error={inputOther.error}
+              placeholderValue={inputOther.placeholderValue}
+              validator={inputOther.validator}
+            />
+
+            <!--              
+             
+              <TextInput
+                bind:label={inputQualification.label}
+                bind:value={inputQualification.value}
+                validate={inputQualification.validate}
+                readonly={inputQualification.readonly}
+                bind:error={inputQualification.error}
+                placeholderValue={inputQualification.placeholderValue}
+              />
+              <TextInput
+                bind:label={inputSubject.label}
+                bind:value={inputSubject.value}
+                validate={inputSubject.validate}
+                readonly={inputSubject.readonly}
+                bind:error={inputSubject.error}
+                placeholderValue={inputSubject.placeholderValue}
+              /> -->
+            <TextInput
+              bind:label={inputUniversity.label}
+              bind:value={inputUniversity.value}
+              validate={inputUniversity.validate}
+              readonly={inputUniversity.readonly}
+              bind:error={inputUniversity.error}
+              placeholderValue={inputUniversity.placeholderValue}
+              validator={inputUniversity.validator}
+            />
+            <TextInput
+              bind:label={inputYearOfPassing.label}
+              bind:value={inputYearOfPassing.value}
+              validate={inputYearOfPassing.validate}
+              readonly={inputYearOfPassing.readonly}
+              placeholderValue={inputYearOfPassing.placeholderValue}
+              validator={inputYearOfPassing.validator}
+            />
+            {#if essentialQualification.marksType == "Percentage"}
+              <TextInput
+                bind:label={inputMarks.label}
+                bind:value={inputMarks.value}
+                validate={inputMarks.validate}
+                readonly={inputMarks.readonly}
+                placeholderValue={inputMarks.placeholderValue}
+                validator={inputMarks.validator}
+              />
+              <TextInput
+                bind:label={inputPercentage.label}
+                bind:value={inputPercentage.value}
+                validate={inputPercentage.validate}
+                readonly={inputPercentage.readonly}
+                placeholderValue={inputPercentage.placeholderValue}
+                validator={inputPercentage.validator}
+              />
+            {:else}
+              <TextInput
+                bind:label={inputCGPA.label}
+                bind:value={inputCGPA.value}
+                validate={inputCGPA.validate}
+                readonly={inputCGPA.readonly}
+                placeholderValue={inputCGPA.placeholderValue}
+                validator={inputCGPA.validator}
+              />
+            {/if}
+          </div>
+        </div>
+        <div class="flex flex-row justify-center mb-4 mx-4">
+          <button
+            on:click={() => toggleModal({ op: "cancel" })}
+            type="submit"
+            class="w-48 text-center bg-indigo-50 hover:bg-white shadow-lg text-gray-500 font-bold py-2 px-4 rounded"
+          >
+            CANCEL
+          </button>
+          <button
+            on:click={() => toggleModal({ op: "save" })}
+            type="submit"
+            class="w-48  text-center bg-orange-400 hover:bg-orange-500  shadow-lg text-white font-bold py-2 px-4 rounded"
+          >
+            UPDATE
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+{/if}

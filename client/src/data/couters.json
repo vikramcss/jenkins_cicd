@@ -1,0 +1,181 @@
+[
+  {
+    "collection": "applications",
+    "field": "appid",
+    "current": 1000001
+  },
+  {
+    "collection": "mazdoor",
+    "field": "appid",
+    "current": 1100001
+  },
+  {
+    "collection": "disinfector",
+    "field": "appid",
+    "current": 1200001
+  },
+  {
+    "collection": "ayah",
+    "field": "appid",
+    "current": 1300001
+  },
+  {
+    "collection": "storeCoolie",
+    "field": "appid",
+    "current": 1400001
+  },
+  {
+    "collection": "safaikarmachari",
+    "field": "appid",
+    "current": 1600001
+  },
+  {
+    "collection": "driver",
+    "field": "appid",
+    "current": 2100001
+  },
+  {
+    "collection": "labAttendent",
+    "field": "appid",
+    "current": 2200001
+  },
+  {
+    "collection": "nursingOrderly",
+    "field": "appid",
+    "current": 2300001
+  },
+  {
+    "collection": "peon",
+    "field": "appid",
+    "current": 2400001
+  },
+
+  {
+    "collection": "watchman",
+    "field": "appid",
+    "current": 2500001
+  },
+  {
+    "collection": "mason",
+    "field": "appid",
+    "current": 2600001
+  },
+  {
+    "collection": "pumpAttendant",
+    "field": "appid",
+    "current": 2700001
+  },
+  {
+    "collection": "malies",
+    "field": "appid",
+    "current": 2800001
+  },
+  {
+    "collection": "dresser",
+    "field": "appid",
+    "current": 2900001
+  },
+  {
+    "collection": "autoMechanic",
+    "field": "appid",
+    "current": 3000001
+  },
+  {
+    "collection": "fitter",
+    "field": "appid",
+    "current": 3100001
+  },
+
+  {
+    "collection": "fbsLascar",
+    "field": "appid",
+    "current": 3200001
+  },
+
+  {
+    "collection": "labAssistant",
+    "field": "appid",
+    "current": 4100001
+  },
+
+  {
+    "collection": "computerProgrammer",
+    "field": "appid",
+    "current": 60100001
+  },
+  {
+    "collection": "workshopSuperintendent",
+    "field": "appid",
+    "current": 60200001
+  },
+  {
+    "collection": "firebrigadeSuperintendent",
+    "field": "appid",
+    "current": 60300001
+  },
+  {
+    "collection": "asstMarketSupdt",
+    "field": "appid",
+    "current": 60400001
+  },
+  {
+    "collection": "healthSupervisor",
+    "field": "appid",
+    "current": 60500001
+  },
+  {
+    "collection": "assistantMedicalOfficer",
+    "field": "appid",
+    "current": 60600001
+  },
+  {
+    "collection": "highSchoolTeacherBEd",
+    "field": "appid",
+    "current": 60700001
+  },
+  {
+    "collection": "healthInspector",
+    "field": "appid",
+    "current": 60800001
+  },
+  {
+    "collection": "juniorEngineerElectrical",
+    "field": "appid",
+    "current": 60900001
+  },
+  {
+    "collection": "juniorEngineerCivil",
+    "field": "appid",
+    "current": 61000001
+  },
+  {
+    "collection": "juniorClerk",
+    "field": "appid",
+    "current": 61100001
+  },
+  {
+    "collection": "ledgerClerk",
+    "field": "appid",
+    "current": 61200001
+  },
+  {
+    "collection": "hindiTypist",
+    "field": "appid",
+    "current": 61300001
+  },
+  {
+    "collection": "labTechnician",
+    "field": "appid",
+    "current": 61400001
+  },
+  {
+    "collection": "staffNurse",
+    "field": "appid",
+    "current": 61500001
+  },
+  {
+    "collection": "dEdTeacher",
+    "field": "appid",
+    "current": 61600001
+  }
+]

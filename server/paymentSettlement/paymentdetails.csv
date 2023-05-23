@@ -1,0 +1,129 @@
+SrNo, Name, category, gender, pwd, amount
+1, "KAMBLE DIVYANG GAUTAM ", SC, Male  No 250
+2, "KAJAL DNYANESHWAR SONAWANE", SC, Female  No 250
+3, "SHAIK TAYYAB HUSSAIN", OBC, Male  No 500
+4, "MAYUR PRALHAD RAUT", OBC, Male  No 500
+5, "PRINCE KUMAR", Gen, Male  No 500
+6, "Kakade Mahesh Shivaji", EWS, Male  No 500
+7, "SHINTU VARGHESE", Gen, Male  No 500
+8, "RAJ SATTAN YADAV ", OBC, Male  No 500
+9, "NITISH KUMAR SINGH", OBC, Male  No 500
+10, "RAVI SHANKAR", SC, Male  No 250
+11, "GAVALE AKASH MANOHAR", SC, Male  No 250
+12, "PRADEEP MEENA", ST, Male  No 250
+13, "KAMBLE AKASH RAMESH", SC, Male  No 250
+14, "Latkar Vishal Subhash ", OBC, Male  No 500
+15, "HEDAU PRAFULL PURUSHOTTAM", OBC, Male  No 500
+16, "DAWANDE CHETNA DHANRAJ", OBC, Female  No 250
+17, "Khule Kishan Madhav", Gen, Male  No 500
+18, "MAHANKALI RAMANJANEYULU", SC, Male  Yes 250
+19, "AMIT KUMAR TIWARI", EWS, Male  No 500
+20, "WAGHMARE TUSHAR SHRIKANT", SC, Male  No 250
+21, "HARITHA VENU", Gen, Female  No 250
+22, "Gulistan Bano Yunus Shaikh", Gen, Female  No 250
+23, "MD SHALU RAHAMAN", OBC, Male  No 500
+24, "Smita Howlader", SC, Female  No 250
+25, "ROHIT NAUTIYAL", OBC, Male  No 500
+26, "ATHUL PRADEEP A", SC, Male  No 250
+27, "BABLU KUMAR", OBC, Male  No 500
+28, " SANDEEP K", Gen, Male  No 500
+29, "MUJAWAR RUBINA SIKANDAR", OBC, Female  No 250
+30, "PRASAD LAXMAN GORE ", OBC, Male  No 500
+31, "SUMEET", Gen, Male  No 500
+32, "ANUPAM GHOSH", OBC, Male  No 500
+33, "SINJU P T", Gen, Male  No 500
+34, "MIDHUN V K", SC, Male  No 250
+35, "Thorat Sushant Sukhadev", Gen, Male  No 500
+36, "ASARUDHEEN K V", OBC, Male  No 500
+37, "NENAVATH RAMESH", ST, Male  No 250
+38, "PIYUSH KHEMCHAND MOTGHARE", OBC, Male  No 500
+39, "SANDEEP YADAV", OBC, Male  No 500
+40, "SHIV KUMAR CHAUDHARY ", SC, Male  No 250
+41, "Halkar Sushil Bhaguram", OBC, Male  No 500
+42, "Goldar Suraj", Gen, Male  No 500
+43, "     Humane Ranjit Prakash", OBC, Male  No 500
+44, "RIKAME DIPALI ZUMBAR", Gen, Female  No 250
+45, "DHARAVATH SRINIVAS", ST, Male  No 250
+46, "AMOL ANIL DHOLE", OBC, Male  No 500
+47, "Sarwade Ashwini Ambadas", SC, Female  No 250
+48, "Bais Priyadarshini Sunilsingh", Gen, Female  No 250
+49, "POTPELWAR SAINATH GAJANAN", OBC, Male  No 500
+50, "VIDHYA SAGAR", OBC, Male  No 500
+51, "Shubham Rajratna Natkar", SC, Male  No 250
+52, "Manoj Kumar Rawani ", OBC, Male  No 500
+53, "Chalvadi Parshuram Nagappa", SC, Male  No 250
+54, "Patil Abhijeet Appasaheb", Gen, Male  No 500
+55, "Ayan Chatterjee", EWS, Male  No 500
+56, "BANSOD MAHESH GOPICHAND", SC, Male  No 250
+57, "MALVE YOGESWARA RAO", OBC, Male  No 500
+58, "Rana Kanan Mukeshbhi", OBC, Male  No 500
+59, "ROSHAN LAL MEENA", ST, Male  No 250
+60, "MD RABNAWAZ QAISAR ANSARI", OBC, Male  No 500
+61, "Nandkar pratibha dnyaneshwar", ST, Female  No 250
+62, "Deshmukh Suraj Bhaiyasaheb", Gen, Male  No 500
+63, "Rahul Kanyan", EWS, Male  No 500
+64, "RAM GANESH S ", SC, Male  No 250
+65, "SAMPRIT SINGH", Gen, Male  No 500
+66, "Sukanta Badaik", SC, Male  No 250
+67, "SHASHIKANTA BEHERA", OBC, Male  No 500
+68, "MUGADA SRI RAM", OBC, Male  No 500
+69, "Khore Supriya Kaluram", Gen, Female  No 250
+70, "SUBHANKAR CHOWDHURY", Gen, Male  No 500
+71, "MANURAJ M", OBC, Male  No 500
+72, "NALAM DIVAKAR", Gen, Male  No 500
+73, "Sumbe Priyanka Raosaheb", OBC, Female  No 250
+74, "DADASAHEB", OBC, Male  No 500
+75, "VIVEK P", Gen, Male  No 500
+76, "MADAN MOHAN MEENA", ST, Male  No 250
+77, "KAILASH CHAND SAINI", OBC, Male  No 500
+78, "Vignesh Babu S", ST, Male  No 250
+79, "D PRAHASITH SAI", Gen, Male  No 500
+80, "KALPANA MEENA", ST, Female  No 250
+81, "ABHISHEK ", OBC, Male  No 500
+82, "Sagare Swapnil Sarjerao", SC, Male  No 250
+83, "MISAL PRASHANT SHIVAJI", OBC, Male  No 500
+84, "SRINIVAS B", SC, Male  No 250
+85, "S NAGA MALLESWARA REDDY", Gen, Male  No 500
+86, "CHAVAN SHWETA ASHOK", ST, Female  No 250
+87, "Dahake Trupti Nandkishor", OBC, Female  No 250
+88, "CHINMOY MAJUMDER", OBC, Male  No 500
+89, "Sahu Shrishreshtha Ashok", Gen, Male  No 500
+90, "Komal Balasaheb Bankar", OBC, Female  No 250
+91, "ARKAPRAVO BERA", SC, Male  No 250
+92, "LIYA TONY", EWS, Female  No 250
+93, "Jagdale Pankaj Kalidas", Gen, Male  No 500
+94, "Irfan", OBC, Male  No 500
+95, "ANAND PAUL N.T.", Gen, Male  No 500
+96, "JITHU C J", Gen, Male  No 500
+97, "Muhammed Haris A.S", Gen, Male  No 500
+98, "Vishnu", Gen, Male  No 500
+99, "Autade", OBC, Male  No 500
+100, "KADAM SHUBHAM BABANRAO", OBC, Male  No 500
+101, "Simon Patrick D", OBC, Male  No 500
+102, "RATHOD GANESH SITARAM", ST, Male  No 250
+103, "MUHAMMED RAASHID M V", OBC, Male  No 500
+104, "ALTHAF MUHAMMED E M", OBC, Male  No 500
+105, "ANLEO RENNY P", Gen, Male  No 500
+106, "BAMBULKAR HARSHADA DIWAKAR", SC, Female  No 250
+107, "Vaibhav", ST, Male  No 250
+108, "NILESH MADHUKAR PATIL", OBC, Male  No 500
+109, "Abdul Salam", OBC, Male  No 500
+110, "SUBHAJIT LAHA", OBC, Male  No 500
+111, "Admane Harshada Kundlink", SC, Female  No 250
+112, "Metkari Sharmin Iqbal", OBC, Female  No 250
+113, "MIRIYALA SUDHAKAR", OBC, Male  No 500
+114, "Subham Ghosh", OBC, Male  No 500
+115, "ANABATHULA MANOJKUMAR", OBC, Male  No 500
+116, "RONGALA HIMANTH", OBC, Male  No 500
+117, "TM AMARNATH", OBC, Male  No 500
+118, "BHALEKAR SHYAMAL PADMAKAR", OBC, Female  No 250
+119, "BHUVAN ", SC, Male  No 250
+120, "ARJUN K UDAYAN", OBC, Male  No 500
+121, "Khole", OBC, Female  No 250
+122, "HARIKRISHNAN M U", OBC, Male  No 500
+123, "Bhumkar Vikram Gajanan", OBC, Male  No 500
+124, "GOWTHAM  U", OBC, Male  No 500
+125, "SAWANT SNEHAL VITTHAL", SC, Female  No 250
+126, "NASHIKKAR RATNAMALA RAJENDRA ", OBC, Female  No 250
+127, "NARENDRA KUMAR YADAV", OBC, Male  No 500
+128, "Partha Das", Gen, Male  No 500

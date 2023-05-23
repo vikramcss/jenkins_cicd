@@ -1,0 +1,16 @@
+{
+    "name": "SendCleanMTA_NodeJS",
+    "description": "A node.js wrapper for SendClean API.",
+    "author": "sendclean.com",
+    "license": "NONE",
+    "main": "sendclean.js",
+    "dependencies": {
+        "request": "~2.74.0"
+    },
+    "bugs": {
+        "url": "https://github.com/abhimanyu1310/SendClean_NodeJS/issues"
+    },
+    "homepage": "https://sendclean.com/",
+    "keywords": ["sendcleantes", "node sarvtes", "tes api", "email", "send email", "email api", "sendclean mta"]
+}
+

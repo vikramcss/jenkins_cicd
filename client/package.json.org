@@ -1,0 +1,43 @@
+{
+  "name": "svelte-kit",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build",
+    "preview": "svelte-kit preview",
+    "lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
+    "format": "prettier --write --plugin-search-dir=. ."
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-static": "^1.0.0-next.16",
+    "@sveltejs/kit": "^1.0.0-next.154",
+    "@typescript-eslint/eslint-plugin": "^4.31.2",
+    "@typescript-eslint/parser": "^4.31.2",
+    "autoprefixer": "^10.3.4",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-svelte3": "^3.2.1",
+    "prettier": "~2.4.1",
+    "prettier-plugin-svelte": "^2.4.0",
+    "svelte": "^3.42.6",
+    "svelte-preprocess": "^4.9.5",
+    "tailwindcss": "^2.2.15",
+    "tslib": "^2.3.1",
+    "typescript": "^4.4.3"
+  },
+  "type": "module",
+  "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@sveltejs/adapter-node": "^1.0.0-next.55",
+    "@tailwindcss/forms": "^0.3.3",
+    "flatpickr": "^4.6.9",
+    "luxon": "^2.2.0",
+    "svelte-fa": "^2.3.3",
+    "svelte-flatpickr": "^3.2.4",
+    "svelte-imask": "^1.2.0",
+    "svelte-multiselect": "^1.2.3",
+    "svelte-select": "^4.4.6",
+    "svelte-spa-router": "^3.2.0",
+    "vest": "^3.2.8"
+  }
+}

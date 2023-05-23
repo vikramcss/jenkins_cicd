@@ -1,0 +1,284 @@
+{
+  "availablePosts": [
+    {
+      "postName": "Mazdoor",
+      "postId": "11",
+      "postClassification": "1",
+      "title": "7th",
+      "sub_title": "7th",
+      "qualification": "7th Pass"
+    },
+    {
+      "postName": "Disinfector",
+      "postId": "12",
+      "postClassification": "1",
+      "title": "7th",
+      "sub_title": "7th",
+      "qualification": "7th Pass"
+    },
+
+    {
+      "postName": "Ayah",
+      "postId": "13",
+      "postClassification": "1",
+      "title": "7th",
+      "sub_title": "7th",
+      "qualification": "7th Pass"
+    },
+    {
+      "postName": "Store Coolie",
+      "postId": "14",
+      "postClassification": "1",
+      "title": "7th",
+      "sub_title": "7th",
+      "qualification": "7th Pass"
+    },
+    {
+      "postName": "Safamikarmachri",
+      "postId": "15",
+      "postClassification": "1",
+      "title": "7th",
+      "sub_title": "7th",
+      "qualification": "7th Pass"
+    },
+
+    {
+      "postName": "Driver",
+      "postId": "21",
+      "postClassification": "2",
+      "title": "10th",
+      "sub_title": "10th and 10 + certification",
+      "qualification": "10th Pass"
+    },
+    {
+      "postName": "Lab Attendant (Hospital)",
+      "postId": "22",
+      "postClassification": "2",
+      "title": "10th and 10 + certification",
+      "sub_title": "10th",
+      "qualification": "10th Pass"
+    },
+    {
+      "postName": "Nursing Orderly",
+      "postId": "23",
+      "postClassification": "2",
+      "title": "10th and 10 + certification",
+      "sub_title": "10th",
+      "qualification": "10th"
+    },
+    {
+      "postName": "Peon",
+      "postId": "24",
+      "postClassification": "2",
+      "title": "10th and 10 + certification",
+      "sub_title": "10th",
+      "qualification": "10th Pass"
+    },
+
+    {
+      "postName": "Watchman",
+      "postId": "25",
+      "postClassification": "2",
+      "title": "10th and 10 + certification",
+      "sub_title": "10th",
+      "qualification": "10th Pass"
+    },
+
+    {
+      "postName": "Mason",
+      "postId": "26",
+      "postClassification": "2",
+      "title": "10th and 10 + certification",
+      "sub_title": "10th",
+      "qualification": "10th + certificate"
+    },
+    {
+      "postName": "Pump Attendant",
+      "postId": "27",
+      "postClassification": "2",
+      "title": "10th and 10 + certification",
+      "sub_title": "10th",
+      "qualification": "10th + certificate"
+    },
+    {
+      "postName": "Malies",
+      "postId": "28",
+      "postClassification": "2",
+      "title": "10th and 10 + certification",
+      "sub_title": "10th",
+      "qualification": "10th + certificate"
+    },
+    {
+      "postName": "Dresser",
+      "postId": "29",
+      "postClassification": "2",
+      "title": "10th and 10 + certification",
+      "sub_title": "10th",
+      "qualification": "10th + certificate"
+    },
+    {
+      "postName": "Auto-Mechanic",
+      "postId": "30",
+      "postClassification": "2",
+      "title": "10th and 10 + certification",
+      "sub_title": "10th",
+      "qualification": "10th + certificate"
+    },
+
+    {
+      "postName": "Fitter",
+      "postId": "31",
+      "postClassification": "2",
+      "title": "10th and 10 + certification",
+      "sub_title": "10th",
+      "qualification": "10th + certificate"
+    },
+
+    {
+      "postName": "Fire Brigade Lascar",
+      "postId": "32",
+      "postClassification": "2",
+      "title": "10 + certification",
+      "sub_title": "10th",
+      "qualification": "10 + certificate"
+    },
+
+    {
+      "postName": "Lab Assistant",
+      "postId": "41",
+      "postClassification": "3",
+      "title": "12th and 12 + certification",
+      "sub_title": "12th",
+      "qualification": "12th Pass"
+    },
+
+    {
+      "postName": "Computer Programmer",
+      "postId": "601",
+      "postClassification": "6",
+      "title": "degree/diploma",
+      "sub_title": "degree/diploma",
+      "qualification": "degree-diploma"
+    },
+    {
+      "postName": "Work Shop Superintendent",
+      "postId": "602",
+      "postClassification": "6",
+      "title": "degree/diploma",
+      "sub_title": "degree/diploma",
+      "qualification": "degree-diploma"
+    },
+    {
+      "postName": "Fire Brigade Superintendent ",
+      "postId": "603",
+      "postClassification": "6",
+      "title": "degree/diploma",
+      "sub_title": "degree/diploma",
+      "qualification": "degree-diploma"
+    },
+    {
+      "postName": "Asst Market Supdt",
+      "postId": "604",
+      "postClassification": "6",
+      "title": "degree/diploma",
+      "sub_title": "degree/diploma",
+      "qualification": "degree-diploma"
+    },
+    {
+      "postName": "Health Supervisor",
+      "postId": "605",
+      "postClassification": "6",
+      "title": "degree/diploma",
+      "sub_title": "degree/diploma",
+      "qualification": "degree-diploma"
+    },
+    {
+      "postName": "Assistant Medical Officer",
+      "postId": "606",
+      "postClassification": "6",
+      "title": "degree/diploma",
+      "sub_title": "degree/diploma",
+      "qualification": "degree-diploma"
+    },
+    {
+      "postName": "High School Teacher(B.Ed)",
+      "postId": "607",
+      "postClassification": "6",
+      "title": "degree/diploma",
+      "sub_title": "degree/diploma",
+      "qualification": "degree-diploma"
+    },
+    {
+      "postName": "Health Inspector",
+      "postId": "608",
+      "postClassification": "6",
+      "title": "degree/diploma",
+      "sub_title": "degree/diploma",
+      "qualification": "degree-diploma"
+    },
+    {
+      "postName": "Junior Electrical Engineer",
+      "postId": "609",
+      "postClassification": "6",
+      "title": "degree/diploma",
+      "sub_title": "degree/diploma",
+      "qualification": "degree-diploma"
+    },
+    {
+      "postName": "Junior Civil Engineer",
+      "postId": "610",
+      "postClassification": "6",
+      "title": "degree/diploma",
+      "sub_title": "degree/diploma",
+      "qualification": "degree-diploma"
+    },
+    {
+      "postName": "Junior Clerk",
+      "postId": "611",
+      "postClassification": "6",
+      "title": "degree/diploma",
+      "sub_title": "degree/diploma",
+      "qualification": "degree-diploma"
+    },
+    {
+      "postName": "Ledger Clerk",
+      "postId": "612",
+      "postClassification": "6",
+      "title": "degree/diploma",
+      "sub_title": "degree/diploma",
+      "qualification": "degree-diploma"
+    },
+    {
+      "postName": "Hindi Typist",
+      "postId": "613",
+      "postClassification": "6",
+      "title": "degree/diploma",
+      "sub_title": "degree/diploma",
+      "qualification": "degree-diploma"
+    },
+    {
+      "postName": "Lab Technician",
+      "postId": "614",
+      "postClassification": "6",
+      "title": "degree/diploma",
+      "sub_title": "degree/diploma",
+      "qualification": "degree-diploma"
+    },
+    {
+      "postName": "Staff Nurse",
+      "postId": "615",
+      "postClassification": "6",
+      "title": "degree/diploma",
+      "sub_title": "degree/diploma",
+      "qualification": "degree-diploma"
+    },
+    {
+      "postName": "D.Ed Teacher",
+      "postId": "616",
+      "postClassification": "6",
+      "title": "degree/diploma",
+      "sub_title": "degree/diploma",
+      "qualification": "degree-diploma"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+    "entity": "event",
+    "account_id": "acc_Ii2pHiYNJrrW9j",
+    "event": "payment.captured",
+    "contains": [
+        "payment"
+    ],
+    "payload": {
+        "payment": {
+            "entity": {
+                "id": "pay_JTtArCoLarQr74",
+                "entity": "payment",
+                "amount": 250,
+                "currency": "INR",
+                "status": "captured",
+                "order_id": "order_JTtAbcdM7FMKLe",
+                "invoice_id": null,
+                "international": false,
+                "method": "upi",
+                "amount_refunded": 0,
+                "refund_status": null,
+                "captured": true,
+                "description": "Processing Fee, C-MET SA-III",
+                "card_id": null,
+                "bank": null,
+                "wallet": null,
+                "vpa": "ketakithombare8@okaxis",
+                "email": "ketakithombare8@gmail.com",
+                "contact": "+917038835477",
+                "notes": {
+                    "address": "Pune Univeristy campus, Maharashtra"
+                },
+                "fee": 0,
+                "tax": 0,
+                "error_code": null,
+                "error_description": null,
+                "error_source": null,
+                "error_step": null,
+                "error_reason": null,
+                "acquirer_data": {
+                    "rrn": "213154326268",
+                    "upi_transaction_id": "AXI55c4e47c2a0c45f1aae8742f7a05c24b"
+                },
+                "created_at": 1652265213,
+                "authorized_at": 1652265228,
+                "auto_captured": true,
+                "captured_at": 1652265229,
+                "late_authorized": false
+            }
+        }
+    },
+    "created_at": 1652265229
+}

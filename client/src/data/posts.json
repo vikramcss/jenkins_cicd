@@ -1,0 +1,161 @@
+{
+  "_id": {
+    "$oid": "63ca6f875ea975a62b96eaca"
+  },
+  "availablePosts": [
+    {
+      "postName": "Mazdoor",
+      "postId": "11",
+      "postClassification": "1",
+      "title": "7th and 10th",
+      "sub_title": "7th",
+      "qualification": "7th Pass"
+    },
+    {
+      "postName": "Sweeper",
+      "postId": "12",
+      "postClassification": "1",
+      "title": "7th and 10th",
+      "sub_title": "7th",
+      "qualification": "7th Pass"
+    },
+    {
+      "postName": "Ward Aya",
+      "postId": "13",
+      "postClassification": "1",
+      "title": "7th and 10th",
+      "sub_title": "10th",
+      "qualification": "10th Pass"
+    },
+    {
+      "postName": "Ward Boy",
+      "postId": "14",
+      "postClassification": "1",
+      "title": "7th and 10th",
+      "sub_title": "10th",
+      "qualification": "10th Pass"
+    },
+    {
+      "postName": "Poundkeeper",
+      "postId": "15",
+      "postClassification": "1",
+      "title": "7th and 10th",
+      "sub_title": "10th",
+      "qualification": "10th Pass"
+    },
+    {
+      "postName": "Watchman",
+      "postId": "16",
+      "postClassification": "1",
+      "title": "7th and 10th",
+      "sub_title": "10th",
+      "qualification": "10th Pass"
+    },
+    {
+      "postName": "Peon",
+      "postId": "17",
+      "postClassification": "1",
+      "title": "7th and 10th",
+      "sub_title": "10th",
+      "qualification": "10th Pass"
+    },
+    {
+      "postName": "Mali",
+      "postId": "21",
+      "postClassification": "2",
+      "title": "10 + certification",
+      "qualification": "Certificate Course in Horticulture or Diploma in Horticulture"
+    },
+    {
+      "postName": "Pharmacist",
+      "postId": "22",
+      "postClassification": "2",
+      "title": "10 + certification",
+      "qualification": "Diploma in Pharmacy or B-Pharmacy Govt recognized University"
+    },
+    {
+      "postName": "Dresser",
+      "postId": "23",
+      "postClassification": "2",
+      "title": "10 + certification",
+      "qualification": "Certificate  Course of Madical Dressing"
+    },
+    {
+      "postName": "Carpenter",
+      "postId": "24",
+      "postClassification": "2",
+      "title": "10 + certification",
+      "qualification": "Certificate in Carpenter or Equivalent Qualification as recognized by the Govt"
+    },
+    {
+      "postName": "Wireman",
+      "postId": "25",
+      "postClassification": "2",
+      "title": "10 + certification",
+      "qualification": "Certificate in Wireman or Equivalent Qualification as recognized by the Govt"
+    },
+    {
+      "postName": "Fireman",
+      "postId": "26",
+      "postClassification": "2",
+      "title": "10 + certification",
+      "qualification": "Certificate in Wireman or Equivalent Qualification as recognized by the Govt"
+    },
+    {
+      "postName": "Mason",
+      "postId": "27",
+      "postClassification": "2",
+      "title": "10 + certification",
+      "qualification": "ITI in Masonry Trade from Govt recognized institute"
+    },
+    {
+      "postName": "Physiotheraoist",
+      "postId": "31",
+      "postClassification": "3",
+      "title": "12 + certification",
+      "qualification": "HSC Whit Science and Diploma in Physiotherapy From Govt recognized University "
+    },
+    {
+      "postName": "Stenographer",
+      "postId": "32",
+      "postClassification": "3",
+      "title": "12 + certification",
+      "qualification": "100 WPM in English Shorthand and 40 WPM in English Typewriting or Computer  Typing from GOvt Instute "
+    },
+    {
+      "postName": "Sabitary Inspetor",
+      "postId": "33",
+      "postClassification": "3",
+      "title": "12 + certification",
+      "qualification": "Diploma in Sanitary Inspector form Govt recognized Institute "
+    },
+    {
+      "postName": "X-Ray Technician",
+      "postId": "41",
+      "postClassification": "4",
+      "title": "Degree (specialization)",
+      "qualification": "Bachelor of Paramedical Technology in Radiogaphy or Bachelor of  Science in Paramedical Technology in Radiogaphy/Physics/Chemistry/Biology/ Diploma "
+    },
+    {
+      "postName": "Registrar",
+      "postId": "51",
+      "postClassification": "5",
+      "title": "Doctor (Medical)",
+      "qualification": "MBBS + Post Graduate Degree/Dimploma + Registration with State Medical Council"
+    },
+    {
+      "postName": "Padiatrician",
+      "postId": "52",
+      "postClassification": "5",
+      "title": "Doctor (Medical)",
+      "qualification": "MBBS + (PG Degree-Pediatrics + 5 yr Exp) or (PG Diloma-Pediatrics + 7 yr Exp) + Registration with State Medical Council"
+    },
+    {
+      "postName": "Asstt Medical Officer",
+      "postId": "53",
+      "postClassification": "5",
+      "title": "Doctor (Medical)",
+      "qualification": "MBBS + Registration with State Medical Council"
+    }
+  ]
+}
