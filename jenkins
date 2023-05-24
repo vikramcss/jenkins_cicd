@@ -35,6 +35,26 @@ pipeline {
     }  
     
     }
-}
-}
+    stage('Deploy to EC2') {
+            steps {
+                // Connect to the EC2 instance
+                withCredentials([usernamePassword(credentialsId: 'dockerhub-credentials', passwordVariable: 'DOCKERHUB_PASSWORD', usernameVariable: 'DOCKERHUB_USERNAME')])
+           {
+               sh "docker login -u $DOCKERHUB_USERNAME -p $DOCKERHUB_PASSWORD"
+           }
+           
+                    sh '''
+                        ssh -o StrictHostKeyChecking=no -i /home/ubuntu/cicd_temp.pem ubuntu@ec2-13-127-173-104.ap-south-1.compute.amazonaws.com << EOF
+                            cd /home/ubuntu/project/jenkins_cicd
 
+                            # Pull the latest Docker images from Docker Hub
+                            docker-compose -f docker-compose.yml build
+
+                            # Start or restart the Docker containers
+                            docker-compose -f docker-compose.yml up -d
+                        
+                    '''
+                }
+            }
+}
+}
